@@ -40,7 +40,7 @@ Specify the .so / .dylib / .dll shared library's path in the Orthanc's [configur
   	"Name" : "MyOrthanc",
   	[...]
   	"Plugins" : [
-    	"/home/user/OrthancDicomWeb/Build/libOrthancDicomWeb.so"
+    	"/home/user/orthanc-explorer2/build/libOE2.so"
   	]
 	}
 		
