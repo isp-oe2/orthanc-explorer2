@@ -54,4 +54,4 @@ You can access the web interface by going to the URL:
 
 	http://localhost:8042/OE2
 	
-By default, you can connect as superuser with username *root* and passwoord *root*
+By default, you can connect as superuser with username *root* and password *root*
