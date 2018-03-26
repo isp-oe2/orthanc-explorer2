@@ -4,36 +4,39 @@
 ## Build instructions
 ### Dependencies
 * An instance of Orthanc ready to run
+* npm
 * cmake
-* g++ and make or Visual Studio for Windows
+* g++ and make for Linux/Mac OS X 
+* Visual Studio 15 2017 for Windows
 
 ### Installation
 
 #### Building the shared library file
-##### Mac OS X / Linux:
+##### Mac OS X:
 
-
-	mkdir build
-	cd build
-	cmake ..
+	cd scripts
+	chmod u+x
+	./OSX_lib_generation.sh
 	
-##### Windows:
+##### Linux:
 
-	mkdir build
-	cd build
-For a 32 bit version:
-
-
-	cmake ..
-For a 64 bit version:
-
-
-	cmake -G "Visual Studio XX Win64" ..
+	cd scripts
+	chmod u+x
+	./LINUX_lib_generation.sh
 	
-Replace XX by your version of Visual Studio (e.g. : 15) 
+##### Windows 64 bits:
+
+	cd scripts
+	Win64_lib_generation.cmd
+	
+If you do not have Visual Studio 15 2017, change the name of the version in the script Win64_lib_generation.cmd
 
 
-##### Import the plugin
+#### Import the plugin
+##### Check the library
+The library should be  generated in the "binaries" folder
+
+##### Link the plugin to Orthanc
 Specify the .so / .dylib / .dll shared library's path in the Orthanc's [configuration file](http://book.orthanc-server.com/users/configuration.html#configuration).
 
 	{
