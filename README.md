@@ -39,6 +39,8 @@ The library should be  generated in the "binaries" folder
 ##### Link the plugin to Orthanc
 Specify the .so / .dylib / .dll shared library's path in the Orthanc's [configuration file](http://book.orthanc-server.com/users/configuration.html#configuration).
 
+For example on Linux:
+
 	{
   	"Name" : "MyOrthanc",
   	[...]
