@@ -5,9 +5,9 @@
 ### Dependencies
 * An instance of Orthanc ready to run
 * npm
-* cmake
 * g++ and make for Linux/Mac OS X 
 * Visual Studio 15 2017 for Windows
+* cmake
 
 ### Installation
 
